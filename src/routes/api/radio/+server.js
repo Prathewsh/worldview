@@ -9,7 +9,8 @@ export async function GET() {
 		
 		if (!res.ok) throw new Error(`RADIO_API_FAILURE: ${res.status}`);
 		
-		const data = await res.json();
+		const rawData = await res.json();
+		const data = rawData.filter(s => (s.url_resolved || s.url || '').startsWith('https://'));
 		
 		return new Response(JSON.stringify(data), {
 			headers: {

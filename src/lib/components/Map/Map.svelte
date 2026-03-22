@@ -187,7 +187,7 @@
 	.warning { color: var(--warning); }
 
 	.sig-val { display: flex; align-items: center; gap: 6px; font-size: 0.6rem; font-weight: 900; color: var(--accent); }
-	.pulse-sig { animation: pulse 1s infinite alternate; }
+	:global(.pulse-sig) { animation: pulse 1s infinite alternate; }
 	@keyframes pulse { from { opacity: 0.5; } to { opacity: 1; } }
 
 	:global(.tactical-marker) {
@@ -202,5 +202,16 @@
 		padding: 4px 8px;
 		border-radius: 2px;
 		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	}
+
+	@media (max-width: 768px) {
+		.hud-top-right, .hud-bottom-right { 
+			display: none; 
+		}
+		.map-hud {
+			padding: 4px 8px;
+		}
+		.hud-top-left { top: 6px; left: 6px; min-width: 110px; }
+		.hud-bottom-left { bottom: 6px; left: 6px; min-width: 120px; }
 	}
 </style>

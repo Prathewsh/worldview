@@ -51,7 +51,9 @@
 				};
 			} else if (line.startsWith('http')) {
 				cur.url = line;
-				result.push(cur);
+				if (line.startsWith('https://')) {
+					result.push(cur);
+				}
 				cur = {};
 			}
 		}

@@ -11,7 +11,7 @@
 
 	async function fetchISS() {
 		try {
-			const res = await fetch('http://api.open-notify.org/iss-now.json');
+			const res = await fetch('/api/iss');
 			const data = await res.json();
 			issTargetPos = {
 				lat: parseFloat(data.iss_position.latitude),
@@ -99,7 +99,7 @@
 			globe.pointOfView({ lat: currentIssPos.lat, lng: currentIssPos.lng, altitude: 1.4 });
 		}
 
-		interval = setInterval(fetchISS, 5000); // Optimized polling
+		interval = setInterval(fetchISS, 1000); // Optimized polling
 		raf = requestAnimationFrame(animate);
 
 		const resize = () => {
@@ -168,7 +168,7 @@
 	.dot { width: 4px; height: 4px; background: var(--success); border-radius: 50%; animation: blink 1s infinite; }
 	@keyframes blink { 0%, 100% { opacity: 0.2; } 50% { opacity: 1; } }
 	
-	.target-icon { color: var(--text-muted); opacity: 0.5; }
+	:global(.target-icon) { color: var(--text-muted); opacity: 0.5; }
 
 	:global(.pulse-blue) { color: #38bdf8; animation: p-blue 2s infinite alternate; }
 	@keyframes p-blue { from { opacity: 0.5; } to { opacity: 1; } }
