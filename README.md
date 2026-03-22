@@ -3,6 +3,8 @@
 
 WORLDVIEW is a high-performance, real-time command center interface built with **SvelteKit**. It aggregates critical terrestrial, orbital, financial, and signal intelligence into a unified, privacy-hardened tactical display.
 
+![Worldview Tactical Interface](./interface.png)
+
 ## 📡 Live Telemetry & Systems
 
 WORLDVIEW operates multiple independent data-streams simultaneously without compromising on rendering performance:
