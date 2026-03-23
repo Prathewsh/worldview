@@ -1,44 +1,44 @@
-# 🌐 WORLDVIEW
-**Global Tactical Situational Awareness Dashboard**
+# WORLDVIEW
+**Global OSINT & Situational Awareness Dashboard**
 
-WORLDVIEW is a high-performance, real-time command center interface built with **SvelteKit**. It aggregates critical terrestrial, orbital, financial, and signal intelligence into a unified, privacy-hardened tactical display.
+WORLDVIEW is a high-performance, real-time Open Source Intelligence (OSINT) command center built with **SvelteKit**. It aggregates critical terrestrial, orbital, financial, and signal intelligence into a unified, privacy-hardened display for researchers, analysts, and OSINT enthusiasts.
 
 ![Worldview Tactical Interface](./interface.png)
 
-## 📡 Live Telemetry & Systems
+## 📡 Live OSINT Telemetry & Systems
 
-WORLDVIEW operates multiple independent data-streams simultaneously without compromising on rendering performance:
+WORLDVIEW operates multiple independent data-streams simultaneously without compromising on rendering performance, pulling exclusively from open-source endpoints:
 
-*   **🌍 Seismic Monitoring Grid (Leaflet + USGS)**
-    *   Live mapping of global tectonic activity.
+*   **🌍 Seismic & Geo-Intelligence (Leaflet + USGS)**
+    *   Live mapping of global tectonic and geospatial anomalies.
     *   Sub-5-second data synchronization with the USGS earthquake network.
     *   DOM-optimized isolated layer rendering to prevent browser thrashing.
-*   **🛰️ Orbit Tracker (Three.js + Globe.gl)**
+*   **🛰️ Orbital Tracking Intelligence (Three.js + Globe.gl)**
     *   True-3D interpolation of the International Space Station's orbital trajectory.
-    *   Optimized garbage collection to ensure a fluid 60FPS tactical display without memory leaks.
-*   **📻 Signals Intel Deck (Radio Browser API)**
-    *   Server-side CORS-bypassing proxy for intercepting the top global radio frequencies.
-    *   Real-time playback and signal bandwidth diagnostics.
-*   **📺 Real-time News Matrix (HLS.js)**
-    *   Live interception of IPTV global news feeds (BBC, ABC News, CNN, Al Jazeera, etc.).
-    *   Automated Quality-of-Service (QoS) matching for high-definition English streams.
-*   **📈 Terrestrial Biosignature & Markets**
+    *   Optimized garbage collection to ensure a fluid 60FPS tactical display for tracking space assets.
+*   **📻 Signals Intel Deck (OSINT Radio Monitor)**
+    *   Server-side CORS-bypassing proxy for intercepting and monitoring global radio frequencies.
+    *   Real-time playback and signal bandwidth diagnostics for unencrypted broadcasts.
+*   **📺 Real-time News & Media Matrix (HLS.js)**
+    *   Live interception of IPTV global news feeds (BBC, ABC News, CNN, Al Jazeera, etc.) for breaking situation analysis.
+    *   Automated Quality-of-Service (QoS) matching for high-definition OSINT streams.
+*   **📈 Macro-Indicators & Markets**
     *   Live global population counter synchronized with terrestrial growth rates (~2.2 persons/sec).
-    *   Constant Bitcoin (BTC/USD) market tracking via CoinGecko.
+    *   Constant Bitcoin (BTC/USD) market tracking via CoinGecko for financial intelligence.
 *   **🎥 Tactical Situation Monitors**
-    *   Encrypted, privacy-enhanced video feeds of the Middle East and Earth Orbit.
+    *   Privacy-enhanced open-source video feeds of active regions and Earth Orbit.
 
 ## ⚙️ Architecture & Security
 
-The system is designed to bypass standard browser restrictions that typically hinder intensive situational dashboards.
+The system is designed to bypass standard browser restrictions that typically hinder intensive situational and OSINT gathering dashboards.
 
-*   **Internal Proxies**: Uses SvelteKit API routes to create server-side relays for third-party endpoints, effectively bypassing client-side CORS blockers.
-*   **Permissions Policy Hardening**: Defines a strict document-level permissions policy to allow `compute-pressure` while silencing external tracking violations.
+*   **Internal Proxies**: Uses SvelteKit API routes to create server-side relays for third-party open-source endpoints, effectively bypassing client-side CORS blockers.
+*   **Permissions Policy Hardening**: Defines a strict document-level permissions policy to allow `compute-pressure` while silencing external tracking violations designed to unmask analysts.
 *   **Memory Optimization**: Avoids Svelte reactive thrashing in heavy animation frames by manipulating WebGL internal state directly.
 
 ## 🚀 Deployment & Operations
 
-To bring the tactical dashboard online locally:
+To bring the OSINT tactical dashboard online locally:
 
 1.  **Clone the Repository**
 2.  **Install Dependencies**: Install the required engine modules (Svelte, Three.js, Leaflet, etc.)
@@ -51,9 +51,9 @@ To bring the tactical dashboard online locally:
     ```
 4.  Navigate to `http://localhost:5173` in your browser to view the active feed.
 
-## 🎨 Variants (Themes)
+## 🎨 OSINT Variants (Themes)
 
-The dashboard supports dynamic hot-swapping between different tactical color palettes through the top-bar control array:
+The dashboard supports dynamic hot-swapping between different OSINT color palettes through the top-bar control array:
 *   `W` - Default Tactical (Sky Blue)
 *   `T` - Technosignatures (Neon Green)
 *   `F` - Financial/Market (Amber/Gold)
